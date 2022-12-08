@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  background-color: #ffffff;
+  background-image: linear-gradient(
+    0deg,
+    #ffffff 0%,
+    #6284ff 50%,
+    #ff0000 100%
+  );
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  width: 1760px;
+  margin: 0 auto;
+  background-color: white;
+  border: 4px solid black;
+}
+
+header {
+  background-image: radial-gradient(
+    circle farthest-corner at 50.4% 50.5%,
+    rgba(251, 32, 86, 1) 0%,
+    rgba(135, 2, 35, 1) 90%
+  );
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+
+nav {
+  display: flex;
+  font-weight: bold;
+}
+
+nav h1 {
+  text-decoration: underline;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  font-size: 19px;
+}
+
+nav li {
+  list-style: none;
+  padding: 2em;
+}
+
+#nav_left {
+  margin-left: 2em;
+}
+#nav_mid img {
+  width: 100px;
+  height: 80px;
+  margin-right: 0.8em;
+  border-radius: 50px;
+}
+
+#nav_mid {
+  align-items: center;
+  font-size: 1.5em;
+}
+
+#nav_right {
+  margin-right: 2em;
+}
+
+/* Main Section */
+
+main {
+  display: flex;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(215, 223, 252, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(215, 223, 252, 1) 84%
+  );
+}
+
+section p {
+  font-size: 20px;
+  padding: 1em 5em;
+  line-height: 1.8em;
+  color: black;
+}
+
+section h1 {
+  text-align: center;
+  padding-top: 1.3em;
+  font-size: 36px;
+  color: black;
+}
+
+section img {
+  width: 500px;
+  height: fit-content;
+  margin-bottom: 2em;
+  /* margin-left: 5em; */
+  /* position: relative;
+  left: 10%;
+  top: 33%; */
+  border: 4px solid black;
+}
+
+.main-div {
+  display: flex;
+  margin-left: 5em;
+}
+
+#quote {
+  text-align: center;
+  padding: 1em 2em;
+  background-color: rgba(0, 0, 0, 0.219);
+  border-radius: 8px;
+  margin-top: 2.2em;
+  margin-bottom: 2em;
+  font-family: "Parisienne", cursive;
+  font-size: 22px;
+}
+
+aside {
+  padding: 4em 4em 3em;
+  border-left: 2px solid black;
+}
+
+aside h2 {
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+aside a {
+  color: white;
+  font-size: 20px;
+}
+
+aside li {
+  margin: 3em 0 2em;
+  list-style: none;
+  text-align: center;
+}
+
+.yonko-btn {
+  /* padding: 0.8em 1em;
+  border-radius: 10px;
+  width: 120px; */
+  min-width: 100%;
+  background-color: black;
+  background-image: linear-gradient(
+    to right,
+    #0099f7 0%,
+    #f11712 51%,
+    #0099f7 100%
+  );
+  margin: 0 auto;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.yonko-btn a {
+    text-decoration: none;
+}
+
+.yonko-btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 0.8em;
+  background-image: radial-gradient(
+    circle farthest-corner at 50.4% 50.5%,
+    rgba(251, 32, 86, 1) 0%,
+    rgba(135, 2, 35, 1) 90%
+  );
+  border-top: 4px solid black;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  * {
+    font-size: 80%;
+  }
+
+  #nav_mid{
+    display: none;
+  }
+
+  header {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #quote {
+    padding: 0;
+  }
+
+  aside {
+    border-left: none;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .main-div p {
+    padding: 1em 2em;
+  }
+
+  h1 {
+    text-decoration: underline;
+  }
+
+  h2 {
+    margin-bottom: 0.5em;
+  }
+
+  .yonko-btn {
+    min-width: 50%;
+    margin-bottom: 10em;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  * {
+    font-size: 80%;
+  }
+
+  #nav_mid{
+    display: none;
+  }
+
+  body, html {
+    min-width: 479px;
+  }
+
+  header {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #quote {
+    padding: 0;
+  }
+
+  aside {
+    border-left: none;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .main-div p {
+    padding: 1em 2em;
+  }
+
+  h1 {
+    text-decoration: underline;
+  }
+
+  h2 {
+    margin-bottom: 0.5em;
+  }
+
+  .yonko-btn {
+    min-width: 50%;
+    margin-bottom: 10em;
+  }
+}

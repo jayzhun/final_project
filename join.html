@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/join.css" />
+    <title>One Piece Website</title>
+    <link rel="shortcut icon" href="/images/flag.icon.ico" type="image/x-icon">
+  </head>
+  <header>
+    <nav id="nav_left">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <nav id="nav_mid">
+      <img src="/images/flag.icon.ico" alt="Straw Hat Flag" />
+      <h1>The One Piece</h1>
+    </nav>
+    <nav id="nav_right">
+      <ul>
+        <li><a href="join.html">Join the Crew</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <main>
+      <h1>Sign up here to join a pirate crew!</h1>
+      <form action="subscribe.html" id="form1" method="get">
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          required
+          placeholder="Enter a Username"
+          autofocus
+        /><br>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          placeholder="Enter a Password"
+        /><br>
+        <label for="firstname">First name:</label>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          required
+          placeholder="Enter your first name"
+          autofocus
+        /><br>
+        <label for="lastname">Last Name:</label>
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          required
+          placeholder="Enter your last name"
+          autofocus
+        /><br>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="Enter your Email address"
+        /><br>
+        <label for="birthday">Birth Date:</label>
+        <input type="date" name="birthdate" id="birthdate" /><br />
+        <label for="crew">Choose an Emperor's Crew:</label>
+        <select name="crew" id="crew">
+          <option value="Strawhat Pirates">The Strawhat Pirates</option>
+          <option value="Red haired Pirates">The Red Haired Pirates</option>
+          <option value="Blackbeard Pirates">The Blackbeard Pirates</option>
+          <option value="Buggy Pirates">The Buggy Pirates</option></select
+        ><br /><br>
+        <label for="comments">Comments</label><br>
+        <textarea name="comments" id="comments" cols="80" rows="12" placeholder="Leave a comment here"></textarea><br>
+        <input class="btn" type="submit" value="submit" name="submit" />
+        <input class="btn" type="reset" value="reset" name="reset" />
+      </form>
+    </main>
+  </body>
+  <footer>
+    <p>&#169; Copyright 2022 Jason Gagante</p>
+  </footer>
+</html>

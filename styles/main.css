@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  background-image: url("/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  max-width: 1860px;
+  margin: 0 auto;
+  background-color: white;
+  border: 2px solid black;
+}
+
+header {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  max-width: 100%;
+}
+
+nav {
+  display: flex;
+  font-weight: bold;
+}
+
+nav h1 {
+  text-decoration: underline;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  font-size: 19px;
+}
+
+nav li {
+  list-style: none;
+  padding: 2em;
+}
+
+#nav_left {
+  margin-left: 2em;
+}
+#nav_mid img {
+  width: 80px;
+  height: 80px;
+  margin-right: 0.8em;
+}
+
+#nav_mid {
+  align-items: center;
+  font-size: 1.5em;
+  animation: grow 4s ease alternate;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+#nav_right {
+  margin-right: 2em;
+}
+
+/* Main Section */
+
+main {
+  display: flex;
+}
+
+section h2 {
+  text-align: center;
+  padding: 2em 1em 1em;
+}
+
+section p {
+  font-size: 18px;
+  padding: 1em 5em;
+  line-height: 1.8em;
+}
+
+aside {
+  padding: 10em 4em 3em;
+  border-left: 2px solid black;
+}
+
+aside h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+aside a {
+  color: white;
+  font-size: 20px;
+}
+
+aside li {
+  margin: 3em 0 2em;
+  list-style: none;
+  text-align: center;
+}
+
+.yonko-btn {
+  min-width: 100%;
+  background-image: linear-gradient(
+    to right,
+    #77a1d3 0%,
+    #79cbca 51%,
+    #77a1d3 100%
+  );
+  margin: 0 auto;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 10px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.yonko-btn a {
+  text-decoration: none;
+}
+
+.yonko-btn :hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Video Styling */
+.video-sec {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.932) 25%,
+    rgba(0, 0, 0, 0.829) 50%,
+    rgba(0, 0, 0, 0.932) 75%
+  );
+}
+
+.video-sec h3:first-child {
+  text-align: center;
+  color: white;
+  padding-top: 5em;
+  padding-bottom: 2em;
+}
+
+.video-sec h3:last-of-type {
+  text-align: center;
+  color: white;
+}
+
+video {
+  position: relative;
+  top: 6%;
+  margin: auto;
+}
+
+#print {
+  padding: 0.7em 0.8em;
+  position: relative;
+  left: 44%;
+  margin-bottom: 1.3em;
+  border: 2px solid black;
+  border-radius: 8px;
+  color: white;
+  background-color: #0093e9;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 0.8em;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  border-top: 3px solid black;
+}
+
+@media screen and (min-width: 960px) and (max-width: 1326px) {
+  * {
+    font-size: 80%;
+  }
+
+  #nav_mid img {
+    width: 50px;
+    height: 50px;
+  }
+
+  header {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    max-width: 100%;
+  }
+
+  .video-sec h3 {
+    margin-bottom: 2em;
+    font-size: 200%;
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10em;
+  }
+
+  .video-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  h2 {
+    margin-bottom: 1.5em;
+    font-size: 200%;
+  }
+
+  .yonko-btn {
+    min-width: 50%;
+    margin-bottom: 10em;
+  }
+
+  #print {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  * {
+    font-size: 80%;
+  }
+
+  header {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #nav_mid img {
+    width: 50px;
+    height: 50px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    max-width: 100%;
+  }
+
+  .video-sec h3 {
+    margin-bottom: 2em;
+    font-size: 200%;
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10em;
+  }
+
+  .video-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  h2 {
+    margin-bottom: 1.5em;
+    font-size: 200%;
+  }
+
+  .yonko-btn {
+    min-width: 50%;
+    margin-bottom: 10em;
+  }
+
+  #print {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  * {
+    font-size: 80%;
+  }
+
+  #nav_mid img {
+    width: 50px;
+    height: 50px;
+  }
+
+  header {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    max-width: 100%;
+  }
+
+  .video-sec h3 {
+    margin-bottom: 2em;
+    font-size: 200%;
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .video-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  h2 {
+    margin-bottom: 1.5em;
+    font-size: 200%;
+  }
+
+  .yonko-btn {
+    min-width: 50%;
+    margin-bottom: 10em;
+  }
+
+  #print {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  * {
+    font-size: 80%;
+  }
+
+  #nav_mid img {
+    width: 50px;
+    height: 50px;
+  }
+
+  header {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    min-width: 479px;
+  }
+
+  .video-sec h3 {
+    margin-bottom: 2em;
+    font-size: 200%;
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  h2 {
+    margin-bottom: 1.5em;
+    font-size: 200%;
+  }
+
+  .yonko-btn {
+    min-width: 50%;
+    margin-bottom: 10em;
+  }
+
+  #print {
+    display: none;
+  }
+}
